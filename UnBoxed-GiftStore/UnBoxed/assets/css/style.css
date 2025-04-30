@@ -1,0 +1,247 @@
+/* General Styles */
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/* Hero Section */
+.hero-section {
+    background: linear-gradient(135deg, #6c5ce7 0%, #a8a4e6 100%);
+    padding: 100px 0;
+    margin-bottom: 50px;
+}
+
+.min-vh-75 {
+    min-height: 75vh;
+}
+
+/* Product Cards */
+.product-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+}
+
+.product-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.product-card .card-img-top {
+    height: 200px;
+    object-fit: cover;
+    width: 100%;
+    aspect-ratio: 1;
+}
+
+.product-card .card-body {
+    padding: 1.5rem;
+}
+
+.product-card .card-title {
+    font-size: 1.1rem;
+    margin-bottom: 0.5rem;
+}
+
+.product-card .card-text {
+    font-size: 1.2rem;
+    font-weight: bold;
+    color: #6c5ce7;
+}
+
+/* Product Details Page */
+.product-image-container {
+    margin-bottom: 2rem;
+    border-radius: 8px;
+    overflow: hidden;
+    box-shadow: 0 4px 20px rgba(0, 0, 0, 0.1);
+}
+
+.product-image {
+    width: 100%;
+    height: auto;
+    max-height: 500px;
+    object-fit: contain;
+    display: block;
+}
+
+/* Category Pages */
+.category-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    border: none;
+    box-shadow: 0 2px 15px rgba(0, 0, 0, 0.1);
+}
+
+.category-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 5px 20px rgba(0, 0, 0, 0.15);
+}
+
+.category-header {
+    background: linear-gradient(135deg, #f8f9fa 0%, #e9ecef 100%);
+    padding: 3rem 0;
+    margin-bottom: 3rem;
+}
+
+/* About Section */
+.about-section {
+    background-color: #f8f9fa;
+}
+
+.about-section ul li {
+    margin-bottom: 1rem;
+    font-size: 1.1rem;
+}
+
+/* Features Section */
+.features-section {
+    background-color: #ffffff;
+}
+
+.features-section i {
+    color: #6c5ce7;
+}
+
+/* Newsletter Section */
+.newsletter-section {
+    background-color: #2d3436;
+}
+
+.newsletter-section .form-control {
+    border-radius: 0;
+    border: none;
+    padding: 1rem;
+}
+
+.newsletter-section .btn {
+    border-radius: 0;
+    padding: 1rem 2rem;
+}
+
+/* Footer */
+footer {
+    background-color: #2d3436;
+}
+
+footer h5 {
+    color: #ffffff;
+    margin-bottom: 1.5rem;
+}
+
+footer ul li {
+    margin-bottom: 0.5rem;
+}
+
+footer a {
+    text-decoration: none;
+    transition: color 0.3s ease;
+}
+
+footer a:hover {
+    color: #6c5ce7 !important;
+}
+
+.social-links a {
+    font-size: 1.5rem;
+    transition: color 0.3s ease;
+}
+
+.social-links a:hover {
+    color: #6c5ce7 !important;
+}
+
+/* Navigation */
+.navbar {
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+}
+
+.navbar-brand i {
+    color: #6c5ce7;
+    margin-right: 0.5rem;
+}
+
+.nav-link {
+    transition: color 0.3s ease;
+}
+
+.nav-link:hover {
+    color: #6c5ce7 !important;
+}
+
+/* Buttons */
+.btn-primary {
+    background-color: #6c5ce7;
+    border-color: #6c5ce7;
+    padding: 0.5rem 1.5rem;
+    transition: all 0.3s ease;
+}
+
+.btn-primary:hover {
+    background-color: #5b4cc4;
+    border-color: #5b4cc4;
+    transform: translateY(-2px);
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+    .hero-section {
+        text-align: center;
+        padding: 50px 0;
+    }
+
+    .hero-section .text-start {
+        text-align: center !important;
+    }
+
+    .hero-section img {
+        margin-top: 2rem;
+    }
+
+    .product-card .card-img-top {
+        height: 150px;
+    }
+
+    .product-image img {
+        max-height: 300px;
+    }
+}
+
+/* Animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.hero-section,
+.featured-products,
+.about-section,
+.features-section,
+.newsletter-section {
+    animation: fadeIn 1s ease-out;
+}
+
+/* Custom Scrollbar */
+::-webkit-scrollbar {
+    width: 8px;
+}
+
+::-webkit-scrollbar-track {
+    background: #f1f1f1;
+}
+
+::-webkit-scrollbar-thumb {
+    background: #6c5ce7;
+    border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #5b4cc4;
+} 
